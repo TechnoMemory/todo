@@ -4,7 +4,7 @@ const NodemonPlugin = require('nodemon-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/app.js',
+    app: './app.js',
   },
 
   output: {
