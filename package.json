@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "webpack --watch --config webpack.server.config.js",
-    "start": "node app.js",
+    "start": "node src/app.js",
     "lint": "eslint ."
   },
   "keywords": [],
