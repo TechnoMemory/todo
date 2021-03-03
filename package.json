@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack --watch --config webpack.server.config.js",
-    "start": "node src/app.js",
-    "lint": "eslint ."
+    "server": "webpack --config webpack.server.config.js",
+    "start": "node app.js",
+    "heroku-postbuild": "npm run prod"
   },
   "keywords": [],
   "author": "",
