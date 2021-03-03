@@ -5,9 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack --config webpack.server.config.js",
-    "start": "node app.js",
-    "heroku-postbuild": "npm run prod"
+    "scripts": {
+      "dev": "react-scripts start",
+      "start": "serve -s build",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject",
+      "heroku-postbuild": "npm run build"
+    }
   },
   "keywords": [],
   "author": "",
@@ -48,6 +53,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "lodash": "^4.17.21",
-    "mongoose": "^5.11.13"
+    "mongoose": "^5.11.13",
+    "serve": "^11.3.2"
   }
 }
